@@ -1,0 +1,212 @@
+body {
+  background-color: black;
+  background-image: url(//s3.amazonaws.com/www.lacunaexpanse.com/field.png);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #ffcc00;
+}
+
+a:visited {
+  color: #e8a400;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+img {
+    border: 0;
+}
+
+.wallpaper {
+    text-align: center;
+    width: 375px;
+    height: 240px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+@font-face {  
+  font-family: promethean;  
+  src: url( //www.lacunaexpanse.com/fonts/promethean.eot ); /* ie */
+  src: url( //www.lacunaexpanse.com/fonts/promethean.ttf ) format("truetype");  /* non ie */
+}  
+
+#sitenav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -400px;
+  width: 800px;
+  text-align: center;
+}
+
+#sitenav ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: inline;
+}
+
+#sitenav ul li {
+  border: 5px solid #e8a400;
+  border-bottom: 5px solid #d79300;
+  border-right: 5px solid #d79300;
+  background-color: #e8a400;
+  padding: 10px; 
+  padding-bottom: 2px;
+  list-style: none;
+  display: inline;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px; 
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+#sitenav ul li.play {
+  border: 5px solid green;
+  border-bottom: 5px solid #007000;
+  border-right: 5px solid #007000;
+  background-color: green;
+}
+
+#sitenav ul li.help {
+  border: 5px solid #d00000;
+  border-bottom: 5px solid #800000;
+  border-right: 5px solid #800000;
+  background-color: #d00000;
+}
+
+#sitenav ul li a {
+  font-family: promethean, Impact, Helvetica, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+}
+
+#sitenav ul li.play a, #sitenav ul li.help a {
+  color: white;
+}
+
+#sitecrown {
+  width: 800px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#sitefpcrown {
+  height: 450px;
+  width: 100%;
+  background-image: url(//s3.amazonaws.com/www.lacunaexpanse.com/header1.jpg);
+  background-repeat: no-repeat;
+}
+
+#sitebodytop {
+  width: 800px;
+  margin: 0 auto;
+  background-image: url(//s3.amazonaws.com/www.lacunaexpanse.com/bkg_crown.png);
+  height: 31px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px; 
+  -webkit-border-top-left-radius: 10px;
+  text-align: center;
+  font-family: promethean, Impact, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+#sitebody {
+  width: 800px;
+  margin: 0 auto;
+  background-image: url(//s3.amazonaws.com/www.lacunaexpanse.com/bkg.png);
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px; 
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+#sitebodycontent {
+  color: white;
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+#playnow { 
+  position: absolute;
+  top: 200px;
+  right: 5%;
+  border-bottom: 5px solid #007000;
+  border-right: 5px solid #007000;
+  background-color: green; 
+  color: white; 
+  padding: 10px; 
+  padding-bottom: 2px;
+  border--radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  font-family: promethean, Impact, Helvetica, sans-serif;
+  font-size: 35px;
+  margin: 30px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+#sitefooter {
+  width: 800px;
+  margin: 0 auto;
+  color: #cccccc;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#copyright {
+ float: left;
+}
+
+#sitesubnav {
+  float: right;
+}
+
+#sitesubnav a {
+  color: white;
+}
+
+#follow {
+    text-align: center;
+}
+
+.fblike {
+    float: right;
+}
+
+.sitelogo {
+    float: left;
+}
+
+.communitylogin {
+    color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fblikefp {
+  position: absolute;
+  top: 320px;
+  right: 5%;
+}
