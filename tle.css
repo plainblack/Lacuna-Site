@@ -32,8 +32,8 @@ img {
 
 @font-face {  
   font-family: promethean;  
-  src: url( //www.lacunaexpanse.com/fonts/promethean.eot ); /* ie */
-  src: url( //www.lacunaexpanse.com/fonts/promethean.ttf ) format("truetype");  /* non ie */
+  src: url( //www.lacunaexpanse.com/promethean.eot ); /* ie */
+  src: url( //www.lacunaexpanse.com/promethean.ttf ) format("truetype");  /* non ie */
 }  
 
 #sitenav {
@@ -148,13 +148,13 @@ img {
   position: absolute;
   top: 200px;
   right: 5%;
+  border: 5px solid green;
   border-bottom: 5px solid #007000;
   border-right: 5px solid #007000;
   background-color: green; 
   color: white; 
   padding: 10px; 
-  padding-bottom: 2px;
-  border--radius: 10px;
+  border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   font-family: promethean, Impact, Helvetica, sans-serif;
