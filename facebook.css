@@ -1,0 +1,40 @@
+#sitefpcrown {
+  height: 242px;
+  width: 520px;
+  background-image: url(//s3.amazonaws.com/www.lacunaexpanse.com/facebook/header1.jpg);
+}
+
+#sitebodytop {
+  width: 520px;
+  margin: 0 auto;
+  background-image: url(//s3.amazonaws.com/www.lacunaexpanse.com/facebook/bkg_crown.jpg);
+}
+
+
+#sitebody {
+  width: 520px;
+  margin: 0 auto;
+  background-image: url(//s3.amazonaws.com/www.lacunaexpanse.com/facebook/bkg.jpg);
+}
+
+#playnow {
+  position: absolute;
+  top: 80px;
+  right: 5px;
+  border: 5px solid green;
+  border-bottom: 5px solid #007000;
+  border-right: 5px solid #007000;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-family: Impact, Helvetica, sans-serif;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+
