@@ -1,0 +1,43 @@
+<browsergameshub version="0.1">
+	<name>The Lacuna Expanse</name>
+	<site_url>http://www.lacunaexpanse.com/</site_url>
+       <descriptions>
+		<description lang="en">The Expanse is a region of space with millions of habitable worlds. You can play with or compete against thousands of other players as you build your empire, fight off spies in a battle for cold war supremacy, form alliances, search the expanse for lost ancient artifacts, and more.</description>
+	</descriptions>
+        <genre>simulator</genre>
+        <effort>low</effort>
+        <setting>space</setting>
+        <players>1400</players>
+        <age_recom>13+</age_recom>
+	<status>release</status>
+	<payment>free</payment>
+	<timing>realtime</timing>
+	<banner_url>http://d3c1jot4uxnt54.cloudfront.net/ads/468x60-shipchase.gif</banner_url>
+        <logo_url>http://d3c1jot4uxnt54.cloudfront.net/logo-100x23.png</logo_url>
+	<screenshots>
+		<screenshot>
+			<url>http://d3c1jot4uxnt54.cloudfront.net/screenshots/planetside.jpg</url>
+			<descriptions>
+				<description lang="en">Each building has a purpose.</description>
+			</descriptions>
+		</screenshot>
+		<screenshot>
+			<url>http://d3c1jot4uxnt54.cloudfront.net/screenshots/space.jpg</url>
+			<descriptions>
+				<description lang="en">Interacting with the star map.</description>
+			</descriptions>
+		</screenshot>
+		<screenshot>
+			<url>http://d3c1jot4uxnt54.cloudfront.net/screenshots/large-lake.jpg</url>
+			<descriptions>
+				<description lang="en">There is great diversity in landscapes.</description>
+			</descriptions>
+		</screenshot>
+		<screenshot>
+			<url>http://d3c1jot4uxnt54.cloudfront.net/screenshots/asteroid.jpg</url>
+			<descriptions>
+				<description lang="en">You can mine asteroids for precious minerals.</description>
+			</descriptions>
+		</screenshot>
+	</screenshots>
+</browsergameshub>
