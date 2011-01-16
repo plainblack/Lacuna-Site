@@ -3,7 +3,9 @@
   "name" : "US1",
   "uri" : "https://us1.lacunaexpanse.com/",
   "status" : "Open",
-  "location" : "United States"
+  "location" : "United States",
+  "type" : "Empire Server",
+  "description" : "Long term empire building, with focus on exploration, trade, and malevolent AI. Server never expires."
  }
 ]
 
