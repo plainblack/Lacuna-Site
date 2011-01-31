@@ -5,6 +5,7 @@
 <link type="text/css" rel="stylesheet" href="/tle.css">
 <link rel="icon" href="//s3.amazonaws.com/www.lacunaexpanse.com/favicon.png" type="image/png">
 <link rel="SHORTCUT ICON" href="//s3.amazonaws.com/www.lacunaexpanse.com/favicon.ico">
+<link rel="stylesheet" href="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
 <title>The Lacuna Expanse - Terms and Conditions - Massively Multiplayer Online Space Strategy Game</title>
 <meta property="og:title" content="The Lacuna Expanse">
 <meta property="og:type" content="game">
@@ -14,7 +15,7 @@
 <body>
 
 <div id="sitenav"><ul>
-  <li class="play"><a href="https://us1.lacunaexpanse.com/">Play</a></li>
+  <li class="play"><a href="/servers.html" rel="playlink">Play</a></li>
   <li><a href="/media/">Media</a></li>
   <li><a href="/tutorial/">Tutorial</a></li>
   <li><a href="//community.lacunaexpanse.com/forums/news">News</a></li>
@@ -298,6 +299,21 @@ via email to the <a href="//community.lacunaexpanse.com/forums/support">The Lacu
     <a href="//community.lacunaexpanse.com/forums/news?func=viewRss"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/rss.png"></a>
   </div>
 </div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.fancybox-1.3.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("a[rel=playlink]").fancybox({
+      'width'                 : '80%',
+      'height'                : '50%',
+      'autoscale'             : false,
+      'transitionIn'          : 'elastic',
+      'transitionOut'         : 'fade',
+      'type'                  : 'iframe'
+    });
+  });
+</script>
 
 <script type="text/javascript">
 

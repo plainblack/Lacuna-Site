@@ -6,7 +6,6 @@
 <link rel="icon" href="//s3.amazonaws.com/www.lacunaexpanse.com/favicon.png" type="image/png">
 <link rel="SHORTCUT ICON" href="//s3.amazonaws.com/www.lacunaexpanse.com/favicon.ico">
 <link rel="stylesheet" href="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
-<link type="text/css" rel="stylesheet" href="/serverList.css" />
 <meta property="og:title" content="The Lacuna Expanse">
 <meta property="og:type" content="game">
 <meta property="og:url" content="http://www.lacunaexpanse.com/">
@@ -19,7 +18,7 @@
 <body>
 
 <div id="sitenav"><ul>
-  <li class="play"><a href="https://us1.lacunaexpanse.com/">Play</a></li>
+  <li class="play"><a href="/servers.html" rel="playlink">Play</a></li>
   <li><a href="/media/">Media</a></li>
   <li><a href="/tutorial/">Tutorial</a></li>
   <li><a href="//community.lacunaexpanse.com/forums/news">News</a></li>
@@ -29,7 +28,7 @@
 </ul></div>
 
 <div id="sitefpcrown">
-  <a id="playnow" href="https://us1.lacunaexpanse.com/">Play Free Now</a>
+  <a id="playnow" href="/servers.html" rel="playlink">Play Free Now</a>
   <div class="fblikefp"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.lacunaexpanse.com%2F&amp;layout=standard&amp;show_faces=true&amp;width=200&amp;action=like&amp;colorscheme=dark&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:80px;" allowTransparency="true"></iframe>
   </div>
 </div>
@@ -51,11 +50,11 @@
 <a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/timers.jpg" title="Timers tell you what your planet is up to."></a>
 <a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/news.jpg" title="Every building gives you more information and adds detail to your planet."></a>
 <br>
-<a href="https://us1.lacunaexpanse.com/" title="Works with Chrome"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/chrome.png" alt="Chrome"></a>
-<a href="https://us1.lacunaexpanse.com/" title="Works with Firefox"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/firefox.png" alt="Firefox"></a>
-<a href="https://us1.lacunaexpanse.com/" title="Works with Safari"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/safari.png" alt="Safari"></a>
-<a href="https://us1.lacunaexpanse.com/" title="Works with Internet Explorer"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/ie.png" alt="Internet Explorer"></a>
-<a href="https://us1.lacunaexpanse.com/facebook/authorize" title="Login With Facebook"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/login-facebook.png" alt="Login With Facebook"></a>
+<a href="/servers.html" rel="playlink" title="Works with Chrome"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/chrome.png" alt="Chrome"></a>
+<a href="/servers.html" rel="playlink" title="Works with Firefox"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/firefox.png" alt="Firefox"></a>
+<a href="/servers.html" rel="playlink" title="Works with Safari"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/safari.png" alt="Safari"></a>
+<a href="/servers.html" rel="playlink" title="Works with Internet Explorer"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/ie.png" alt="Internet Explorer"></a>
+<a href="/servers.html" rel="playlink" title="Login With Facebook"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/login-facebook.png" alt="Login With Facebook"></a>
 </td>
 
 
@@ -142,6 +141,14 @@
 <script type="text/javascript" src="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.fancybox-1.3.1.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
+    $("a[rel=playlink]").fancybox({
+      'width'		      : '80%',
+      'height'		      : '50%',
+      'autoscale'	      : false,
+      'transitionIn'          : 'elastic',
+      'transitionOut'         : 'fade',
+      'type' 		      : 'iframe'
+    });
     $("a[rel=screenshots]").fancybox({
       'transitionIn'          : 'elastic',
       'transitionOut'         : 'fade'
@@ -152,7 +159,6 @@
     });
   });
 </script>
-<script type="text/javascript" src="/serverList.js"></script>
 
 <script type="text/javascript">
 
