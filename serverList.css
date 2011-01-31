@@ -1,0 +1,74 @@
+/* Based on "Drop-Down Menus, Horizontal Style" by Nick Rigby
+ * http://www.alistapart.com/articles/horizdropdowns/
+ * with some Lacuna Expanse styles added */
+
+#listContainer {
+    position: absolute;
+    top: 40px;				/* looks good to me but feel free to adjust */
+	left: 50%;				/* looks good to me but feel free to adjust */
+	margin-left: -365px;	/* looks good to me but feel free to adjust */
+}
+
+ul#serverList {
+	margin: 0;
+	padding: 0;
+	list-style: none; /* No decorations on the list items */
+	width: 100px; /* width of menu items */
+	border-bottom: 1px solid #ccc; /* the color matches the stuff in the footer although there it's the long form, #cccccc */
+	text-align: center;
+	font-family: promethean, Impact, Helvetica, sans-serif; /* match the sitenav */
+}
+
+ul#serverList li {
+	position: relative;
+	background-image: url("//s3.amazonaws.com/www.lacunaexpanse.com/bkg.png"); /* gives that nice blue color */
+}
+
+ul#serverList li ul {
+	position: absolute;
+	left: 99px; /* 1px less than menu width to make the borders overlap */
+	top: 0;
+	margin: 0;
+	padding: 0; /* flush */
+	display: none;
+	list-style: none; /* No decorations on the list items */
+	width: 300px;
+	border: 1px solid #ccc; /* the color matches the stuff in the footer although there it's the long form, #cccccc */
+	font-size: 15px; /* match the sitebodycontent */
+	font-family: Helvetica, sans-serif; /* match the sitebodycontent */
+
+}
+
+/* styles for menu items */
+ul#serverList li a {
+	display: block;
+	text-decoration: none;
+	color: #E8A400; /* golden text */
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	background-image: url("//s3.amazonaws.com/www.lacunaexpanse.com/bkg.png"); /* gives that nice blue color */
+}
+
+/* Not sure if this is needed or not... */
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; height: 1%; }
+* * html ul li a { height: 1%; }
+*/* End */
+
+/* hover styles */
+ul#serverList li a:hover {
+	font-weight: bold;
+}
+
+/* Sub Menu Styles */
+ul#serverList li ul li a {
+	padding: 2px;
+	border: none;
+}
+
+ul#serverList li:hover ul, #serverList li.over ul {
+	display: block;
+}
+
+
