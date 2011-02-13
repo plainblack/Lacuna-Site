@@ -1,5 +1,6 @@
+(function(){
 getServers = function() {
-	var loadUrl = "http://www.lacunaexpanse.com/servers.json",	// what file to load
+	var loadUrl = document.location.protocol + "//www.lacunaexpanse.com/servers.json",	// what file to load
 		data,						// where to store the returned data
 		servers = [					// predefined list for fallback
 		 {
@@ -46,7 +47,6 @@ createServerList = function(servers) {
 	}
         document.getElementById('server_list').innerHTML = server_list;
 };
-
-window.onload = getServers;
-
+$(document).ready(getServers);
+})();
 
