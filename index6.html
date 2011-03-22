@@ -3,6 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <style type="text/css">
+.gfg-horizontal-container {
+		  position : relative;
+                  width: 600px;
+		}
+
+		.gfg-horizontal-root {
+		  _height : 100%;
+		  position : relative;
+		  overflow : hidden;
+		  text-align : center;
+		  padding : 5px;
+		}
+
+		.gfg-horizontal-root .gfg-title {
+		  font-weight : bold;
+		  line-height : 1.5em;
+		  overflow : hidden;
+		  white-space : nowrap;
+		  float : left;
+		  padding-left : 10px;
+		  padding-right : 12px;
+		}
+
+		.gfg-horizontal-root .gfg-entry {
+		  width : auto;
+		  position : relative;
+		  overflow : hidden;
+		  text-align : left;
+		  margin-top : 0px;
+		  margin-left : 0px;
+		  padding-left : 10px;
+                  color: #f1a400;
+		}
+
+                .gfg-horizontal-root .gfg-entry A {
+                  font-family: helvetica, arial, sans-serif;
+                  text-shadow: none;
+                }
+
+		/* To allow correct behavior for overlay */
+		.gfg-horizontal-root .gfg-entry .gf-result {
+		  position : relative;
+		  width : 100%;
+		  height : 100%;
+		  line-height : 1.5em;
+		  overflow : hidden;
+		}
+
+		.gfg-horizontal-root .gfg-list {
+		  display : none;
+		}
+
+		/*
+		 * FeedControl customizations.
+		 */
+
+		.gfg-horizontal-root .gfg-entry .gf-result .gf-snippet,
+		.gfg-horizontal-root .gfg-entry .gf-result .gf-author {
+		  display : none;
+		}
+
+		.gfg-horizontal-root .gfg-entry  .gf-result .gf-title {
+		  color: #fefefe;
+		  margin-right : 3px;
+		  float : left;
+		}
+
+		.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer {
+		  float : left;
+		}
+
+		.gfg-horizontal-root .gfg-entry .gf-result .gf-spacer,
+		.gfg-horizontal-root .gfg-entry .gf-result .gf-relativePublishedDate {
+		  display : block;
+		  color: #AAAAAA;
+		}
+
+		.gfg-branding {
+		  display:none;
+		}
 body {
  background-color: black;
  color: white;
@@ -11,8 +91,103 @@ body {
  margin: 0;
  padding: 0;
 }
+@font-face {
+  font-family: promethean;
+  src: url( //www.lacunaexpanse.com/promethean.eot ); /* ie */
+  src: url( //www.lacunaexpanse.com/promethean.ttf ) format("truetype");  /* non ie */
+}
 .bkg {
  background-position: center;
+ background-repeat: no-repeat;
+ margin: 0;
+ padding: 0;
+}
+A {
+ font-family: promethean, impact, helvetica, arial, sans-serif;
+ font-color: white;
+ color: white;
+ text-decoration: none;
+ text-shadow: #00aeff -5px -5px 9px,#00aeff 5px -5px 9px,#00aeff -5px 5px 9px,#00aeff 5px 5px 9px;
+}
+A:hover {
+ text-shadow: #00ffff -5px -5px 9px,#00ffff 5px -5px 9px,#00ffff -5px 5px 9px,#00ffff 5px 5px 9px;
+}
+#navbar {
+ position: absolute;
+ left: 50%;
+ top: 12px;
+ width: 800px;
+ margin-left: -400px;
+}
+.nav {
+ font-size: 20px;
+}
+#subnav {
+ position: absolute;
+ left: 50%;
+ top: 1855px;
+ width: 550px;
+ margin-left: -380px;
+ text-align: center;
+ font-size: 13px;
+}
+#playfreenow {
+ position: absolute;
+ left: 50%;
+ top: 170px;
+ width: 300px;
+ margin-left: -410px;
+ font-size: 40px;
+ text-align: center;
+}
+#joinus {
+ color: #f1a400;
+}
+#copyright {
+ font-size: 12px;
+ text-shadow: black 1px 1px 3px;
+ position: absolute;
+ left: 50%;
+ top: 920px;
+ width: 180px;
+ margin-left: 200px;
+}
+#gamedesc {
+ text-shadow: black 1px 1px 3px;
+ position: absolute;
+ left: 50%;
+ top: 425px;
+ width: 350px;
+ margin-left: -350px;
+}
+#features {
+ text-shadow: black 1px 1px 3px;
+ position: absolute;
+ left: 50%;
+ top: 1000px;
+ width: 660px;
+ margin-left: -320px;
+}
+#icons {
+ position: absolute;
+ left: 50%;
+ top: 440px;
+ width: 50px;
+ margin-left: 50px;
+}
+img {
+ border: 0;
+}
+#screenshots {
+ position: absolute;
+ left: 50%;
+ top: 665px;
+ width: 235px;
+ margin-left: 142px;
+}
+#screenshots a img {
+ width: 110px;
+ height: 63px;
 }
 </style>
 <link rel="icon" href="//s3.amazonaws.com/www.lacunaexpanse.com/favicon.png" type="image/png">
@@ -29,7 +204,101 @@ body {
 <title>The Lacuna Expanse - Massively Multiplayer Online Space Strategy Game</title>
 </head>
 <body>
-<div style="" class="bkg"></div>
+<div id="playfreenow">
+ <a href="https://us1.lacunaexpanse.com/">Play Free Now!</a>
+</div>
+<div id="navbar">
+ <a href="https://us1.lacunaexpanse.com/" style="margin-right: 55px; margin-left: 70px;" class="nav">Play</a>
+ <a href="/media/" style="margin-right: 40px;" class="nav">Media</a>
+ <a href="/tutorial/" style="margin-right: 25px;" class="nav">Tutorial</a>
+ <a href="//community.lacunaepxanse.com/forums" style="margin-right: 35px;" class="nav">Forums</a>
+ <a href="//community.lacunaexpanse.com/forums/news" style="margin-right: 55px;" class="nav">News</a>
+ <a href="//community.lacunaexpanse.com/wiki" style="margin-right: 55px;" class="nav">Wiki</a>
+ <a href="/help/" class="nav">Help</a>
+</div>
+<div style="background-image: url(v3/bkg_01.jpg);height: 496px;" class="bkg">&nbsp;</div>
+<div style="background-image: url(v3/bkg_02.jpg);height: 702px;" class="bkg">&nbsp;</div>
+<div style="background-image: url(v3/bkg_03.jpg);height: 801px;" class="bkg">&nbsp;</div>
+<div style="background-image: url(v3/bkg_04.jpg);height: 936px;" class="bkg">&nbsp;</div>
+<div id="gamedesc">
+ <p>The Expanse is a region of space with millions of habitable worlds. You can play with or compete against thousands of other players as you build your empire, fight off spies in a battle for cold war supremacy, form alliances, search the expanse for lost ancient artifacts, and more.</p>
+ <p id="joinus">Join thousands of other players online now in this strategic browser and iPhone game. No downloads required. Play for free.</p>
+ <p> As you build out your civilization, you can watch it transform from a mere colony into a vibrant empire.  </p>
+ <div style="text-align: center;"><img src="v3/buildup.gif"></div>
+</div>
+
+<div id="icons">
+ <a href="http://itunes.apple.com/us/app/the-lacuna-expanse/id396242951?mt=8"><img src="v3/appstore.png" alt="iTunes App Store"></a>
+ <a href="http://www.facebook.com/lacunaexpanse"><img src="v3/facebook.png" alt="Facebook"></a>
+ <a href="http://twitter.com/#!/lacunaexpanse"><img src="v3/twitter.png" alt="Twitter"></a>
+ <a href="//community.lacunaexpanse.com/forums/news.rss"><img src="v3/rss.png" alt="RSS News Feed"></a>
+ <a href="https://us1.lacunaexpanse.com/"><img src="v3/chrome.png" alt="Chrome"></a>
+ <a href="https://us1.lacunaexpanse.com/"><img src="v3/safari.png" alt="Safari"></a>
+ <a href="https://us1.lacunaexpanse.com/"><img src="v3/firefox.png" alt="Firefox"></a>
+ <a href="https://us1.lacunaexpanse.com/"><img src="v3/ie.png" alt="Internet Explorer"></a>
+</div>
+
+<div id="screenshots">
+<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/planetside.jpg" title="Looking at the surface of your planet."><img alt="Planet Surface" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/planetside-thumb.jpg"></a>
+<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/asteroid.jpg" title="Asteroids can be mined."><img alt="Asteroid" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/asteroid-thumb.jpg"></a>
+<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/large-lake.jpg" title="Decorate your planets with beautiful natural details."><img alt="Lake" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/large-lake-thumb.jpg"></a>
+<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/space.jpg" title="Space is vast with over a million planets to explore."><img alt="Space" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/space-thumb.jpg"></a>
+<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/zoomed-in.jpg" title="Zoom in for incredible detail."><img alt="Zoom" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/zoomed-in-thumb.jpg"></a>
+<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/starmap.jpg" title="Explore new worlds."><img alt="Star Map" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/starmap-thumb.jpg"></a>
+<a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/timers.jpg" title="Timers tell you what your planet is up to."></a>
+<a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/news.jpg" title="Every building gives you more information and adds detail to your planet."></a>
+</div>
+
+<div id="copyright">
+ &copy; 2011 Lacuna Expanse Corp. All rights reserved.
+</div>
+
+<div id="features">
+<div>Some features include...</div>
+<ul style="float: left; width: 290px;">
+<li>Persistent universe.</li>
+<li>Integrated chat system.</li>
+<li>Play anywhere with a browser or your iPhone.</li>
+<li>Create your own species.</li>
+<li>Enhance your species through genetic manipulation.</a>
+<li>Mine asteroids.</li>
+<li>Unique espionage-based combat system.</li>
+<li>Full trade economy (resources, currency, ships, and more).</li>
+<li>Use archaeology to discover ancient relics and unlock special abilities.</li>
+<li>Build space stations.</li>
+<li>Form governments and pass laws.</li>
+</ul>
+<ul style="width: 290px; float: right;">
+<li>Over 1 million worlds to explore.</li>
+<li>Over 60 different resources.</li>
+<li>Over 100 different buildings to customize your planets.</li>
+<li>Dozens of ship types.</li>
+<li>Contests for unique items.</li>
+<li>Explore more than 100,000 star systems.</li>
+<li>New content added regularly.</li>
+<li>Play as an isolationist if you don't want to engage in battle.</li>
+<li>You can never lose your home planet.</li>
+<li>Colonize gas giants.</li>
+<li>Take on missions to get rewards.</li>
+<li>Non-linear game play. Choose your direction.</li>
+<li>Full access to API.</li>
+</ul>
+<div style="clear: both;"></div>
+
+<div style="color: #f1a400;">News from inside the expanse...
+ <div id="news"> Loading...  </div>
+</div>
+</div>
+
+<div id="subnav">
+ <a href="/developers/">Developers</a>
+ &#164;
+ <a href="/rules/">Rules</a>
+ &#164;
+ <a href="/privacy/">Privacy</a>
+ &#164;
+ <a href="/terms/">Terms</a>
+</div>
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
@@ -38,7 +307,7 @@ body {
   $(document).ready(function() {
     $("a[rel=playlink]").fancybox({
       'width'                 : '80%',
-      'height'                : '50%',
+      'height'                : '70%',
       'autoscale'             : false,
       'transitionIn'          : 'elastic',
       'transitionOut'         : 'fade',
@@ -53,8 +322,36 @@ body {
       'transitionIn'          : 'elastic',
       'transitionOut'         : 'fade'
     });
+    $("#trailer2").fancybox({
+      'transitionIn'          : 'elastic',
+      'transitionOut'         : 'fade'
+    });
   });
 </script>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+<script type="text/javascript">
+		google.load('feeds', '1');
+		
+		function OnLoad() {
+		  var feeds = [
+			{
+			  title: 'US1 Zone 0-0',
+			  url: 'http://s3.amazonaws.com/us1.lacunaexpanse.com/network19/4a244c63-9f05-3056-ae92-b72969dd1c2b.rss'
+			}
+		  ];
+		
+		  var options = {
+			horizontal : true,
+                        title : "&nbsp;",
+			numResults : 50
+		  };
+		
+		  new GFdynamicFeedControl(feeds, 'news', options);
+		}
+		
+		google.setOnLoadCallback(OnLoad);
+    </script>
 
 <script type="text/javascript">
 

@@ -34,27 +34,27 @@
 }
 
 #sitenav ul li {
-  border: 5px solid #510d1d;
-  border-bottom: 5px solid #260811;
-  border-right: 5px solid #260811;
+//  border: 5px solid #510d1d;
+//  border-bottom: 5px solid #260811;
+//  border-right: 5px solid #260811;
   background-color: #510d1d;
   padding: 10px; 
   padding-bottom: 2px;
   list-style: none;
   display: inline;
-  border-bottom-right-radius: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -webkit-border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -moz-border-radius-bottomleft: 10px; 
-  -webkit-border-bottom-left-radius: 10px;
+//  border-bottom-right-radius: 10px;
+//  -moz-border-radius-bottomright: 10px;
+//  -webkit-border-bottom-right-radius: 10px;
+//  border-bottom-left-radius: 10px;
+//  -moz-border-radius-bottomleft: 10px; 
+//  -webkit-border-bottom-left-radius: 10px;
 }
 
 #sitenav ul li a {
   font-family: promethean, Impact, Helvetica, sans-serif;
   font-size: 22px;
   text-decoration: none;
-  color: black;
+  color: #855;
 }
 
 #subnav {
@@ -74,6 +74,18 @@
   left: 150px;
 }
 
+#backdrop {
+  position: absolute;
+  top: 75px;
+  left: 60px;
+  z-index: 5;
+}
+
+#viewscreen {
+  position: relative;
+  z-index: 10;
+}
+
 </style>
 </head>
 <body style="margin: 0; padding: 0; background-image: url(v2/background.png);">
@@ -90,7 +102,8 @@
 
 <div style="background-image: url(v2/screen.png); padding-top: 10px; padding-bottom: 10px; border-bottom: 10px solid #260811; border-top: 10px solid #260811;">
    <div style="width: 900px; margin: 0 auto; position: relative;">
-      <img src="v2/viewscreen.png" alt="viewscreen" style="z-index: 10;">
+      <img src="v2/backdrop3.jpg" alt="whats outside" id="backdrop">
+      <img src="v2/viewscreen.png" alt="viewscreen" id="viewscreen">
       <div style="position: absolute; top: 110px; left: 120px; width: 240px;  z-index: 100; font-family: sans-serif; font-size: 13px; color: #fff;">
          <p>
 		Join thousands of other players online now in this massively multiplayer space strategy game.  Play for free in your web browser or on your iPhone.
@@ -98,7 +111,7 @@
 	<p style="margin-bottom: 30px;">
 		The Expanse is a region of space with millions of habitable worlds. You can play with or compete against thousands of other players as you build your empire: fight off spies in a battle for cold war supremacy, form alliances, search the expanse for lost ancient artifacts, and more. Hundreds of types of buildings, ships, and spies are your tools. What you do with them is up to you.
 	</p>
-        <a href="https://us1.lacunaexpanse.com/" style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #0e1845; background-color: #0e1845; padding: 5px; text-decoration: none; color: #fff; font-size: 26px; margin-left: 10px; font-family: promethean, Impact, sans-serif;">Play Free Now</a>
+        <a href="https://us1.lacunaexpanse.com/" style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #0e4518; background-color: #0e4518; padding: 5px; text-decoration: none; color: #fff; font-size: 26px; margin-left: 10px; font-family: promethean, Impact, sans-serif;">Play Free Now</a>
       </div>
       <div id="follow">
         <a target="_new" href="http://www.facebook.com/pages/The-Lacuna-Expanse/10150146411075010"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/facebook.png" alt="Facebook"></a>
@@ -106,8 +119,8 @@
         <a target="_new" href="http://community.lacunaexpanse.com/forums/news?func=viewRss"><img src="//s3.amazonaws.com/www.lacunaexpanse.com/icons/rss.png" alt="RSS"></a>
         <a target="_new" href="http://itunes.apple.com/us/app/the-lacuna-expanse/id396242951?mt=8"><img src="v2/appstore.png" alt="iTunes App Store"></a>
       </div>
-      <div style="position: absolute; top: 340px; left: 420px;">
-	<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/planetside.jpg" title="Looking at the surface of your planet."><img alt="Planet Surface" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/planetside-thumb.jpg" style="border: 2px solid #801a2e; height: 100px;"></a>
+      <div style="position: absolute; top: 340px; left: 420px; z-index: 20;">
+	<a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/planetside.jpg" title="Looking at the surface of your planet."><img alt="Planet Surface" src="v2/screenshots-thumb.jpg" style="border: 2px solid #801a2e; height: 75px;"></a>
 	<a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/asteroid.jpg" title="Asteroids can be mined."></a>
 	<a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/large-lake.jpg" title="Decorate your planets with beautiful natural details."></a>
 	<a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/space.jpg" title="Space is vast with over a million planets to explore."></a>
@@ -116,8 +129,8 @@
 	<a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/timers.jpg" title="Timers tell you what your planet is up to."></a>
 	<a rel="screenshots" style="display: none;" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/news.jpg" title="Every building gives you more information and adds detail to your planet."></a>
       </div>
-      <div style="position: absolute; top: 340px; left: 590px;">
-      	<a href="#trailer" id="trailer1"><img alt="Trailer" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/trailer-thumb.jpg" style="border: 2px solid #801a2e; height: 100px;"></a>
+      <div style="position: absolute; top: 340px; left: 590px; z-index: 20;">
+      	<a href="#trailer" id="trailer1"><img alt="Trailer" src="v2/trailer-thumb.jpg" style="border: 2px solid #801a2e; height: 75px;"></a>
  	<div style="display: none;">
     	  <div id="trailer" style="width:860px;height:520px;overflow:auto;">
       	    <object type="application/x-shockwave-flash" width="853" height="505"><param name="movie" value="http://www.youtube.com/v/efsJRdJ6dog?fs=1&amp;hl=en_US&amp;color1=0x3a3a3a&amp;color2=0x999999&amp;autoplay=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/efsJRdJ6dog?fs=1&amp;hl=en_US&amp;color1=0x3a3a3a&amp;color2=0x999999&amp;autoplay=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="853" height="505"></object>
@@ -146,6 +159,11 @@
 <script type="text/javascript" src="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
 <script type="text/javascript" src="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.fancybox-1.3.1.js"></script>
 <script type="text/javascript">
+  // put up a random backdrop
+  var randomnumber=Math.floor(Math.random()*3)+1;
+  $('#backdrop').attr('src','v2/backdrop' + randomnumber + '.jpg');
+
+  // ready fancybox
   $(document).ready(function() {
     $("a[rel=screenshots]").fancybox({
       'transitionIn'          : 'elastic',
@@ -156,10 +174,8 @@
       'transitionOut'         : 'fade'
     });
   });
-</script>
 
-<script type="text/javascript">
-
+  // setup google analytics
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-15146236-7']);
   _gaq.push(['_trackPageview']);
