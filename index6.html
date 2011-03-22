@@ -40,6 +40,8 @@
                 .gfg-horizontal-root .gfg-entry A {
                   font-family: helvetica, arial, sans-serif;
                   text-shadow: none;
+                  pointer-events: none;
+       		  cursor: default;
                 }
 
 		/* To allow correct behavior for overlay */
@@ -94,7 +96,7 @@ body {
 @font-face {
   font-family: promethean;
   src: url( //www.lacunaexpanse.com/promethean.eot ); /* ie */
-  src: url( //www.lacunaexpanse.com/promethean.ttf ) format("truetype");  /* non ie */
+  src: local("Promethean"), url( //www.lacunaexpanse.com/promethean.ttf ) format("truetype");  /* non ie */
 }
 .bkg {
  background-position: center;
@@ -134,14 +136,22 @@ A:hover {
 #playfreenow {
  position: absolute;
  left: 50%;
- top: 170px;
+ top: 175px;
  width: 300px;
  margin-left: -410px;
  font-size: 40px;
  text-align: center;
 }
+h1 {
+ font-size: 16px;
+ font-weight: normal;
+ display: inline;
+ margin: 0;
+ padding: 0;
+}
 #joinus {
  color: #f1a400;
+ margin-bottom: 20px;
 }
 #copyright {
  font-size: 12px;
@@ -164,7 +174,7 @@ A:hover {
  text-shadow: black 1px 1px 3px;
  position: absolute;
  left: 50%;
- top: 1000px;
+ top: 1050px;
  width: 660px;
  margin-left: -320px;
 }
@@ -189,10 +199,33 @@ img {
  width: 110px;
  height: 63px;
 }
+#trailer1place {
+ position: absolute;
+ left: 50%;
+ top: 284px;
+ width: 235px;
+ margin-left: 176px;
+}
+#trailer1place a img {
+ width: 192px;
+ height: 105px;
+}
+#trailer2place {
+ position: absolute;
+ left: 50%;
+ top: 465px;
+ width: 235px;
+ margin-left: 176px;
+}
+#trailer2place a img {
+ width: 192px;
+ height: 105px;
+}
 </style>
 <link rel="icon" href="//s3.amazonaws.com/www.lacunaexpanse.com/favicon.png" type="image/png">
 <link rel="SHORTCUT ICON" href="//s3.amazonaws.com/www.lacunaexpanse.com/favicon.ico">
 <link rel="stylesheet" href="//s3.amazonaws.com/www.lacunaexpanse.com/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
+<meta name="description" content="A free massively multiplayer online space strategy game. Play it in your browser or through the free iPhone app!"> 
 <meta property="og:title" content="The Lacuna Expanse">
 <meta property="og:type" content="game">
 <meta property="og:url" content="http://www.lacunaexpanse.com/">
@@ -205,13 +238,13 @@ img {
 </head>
 <body>
 <div id="playfreenow">
- <a href="https://us1.lacunaexpanse.com/">Play Free Now!</a>
+ <a href="/servers.html" rel="playlink">Play Free<br>Now!</a>
 </div>
 <div id="navbar">
- <a href="https://us1.lacunaexpanse.com/" style="margin-right: 55px; margin-left: 70px;" class="nav">Play</a>
+ <a href="/servers.html" style="margin-right: 55px; margin-left: 70px;" class="nav" rel="playlink">Play</a>
  <a href="/media/" style="margin-right: 40px;" class="nav">Media</a>
  <a href="/tutorial/" style="margin-right: 25px;" class="nav">Tutorial</a>
- <a href="//community.lacunaepxanse.com/forums" style="margin-right: 35px;" class="nav">Forums</a>
+ <a href="//community.lacunaexpanse.com/forums" style="margin-right: 35px;" class="nav">Forums</a>
  <a href="//community.lacunaexpanse.com/forums/news" style="margin-right: 55px;" class="nav">News</a>
  <a href="//community.lacunaexpanse.com/wiki" style="margin-right: 55px;" class="nav">Wiki</a>
  <a href="/help/" class="nav">Help</a>
@@ -221,8 +254,9 @@ img {
 <div style="background-image: url(v3/bkg_03.jpg);height: 801px;" class="bkg">&nbsp;</div>
 <div style="background-image: url(v3/bkg_04.jpg);height: 936px;" class="bkg">&nbsp;</div>
 <div id="gamedesc">
- <p>The Expanse is a region of space with millions of habitable worlds. You can play with or compete against thousands of other players as you build your empire, fight off spies in a battle for cold war supremacy, form alliances, search the expanse for lost ancient artifacts, and more.</p>
- <p id="joinus">Join thousands of other players online now in this strategic browser and iPhone game. No downloads required. Play for free.</p>
+ <p>The Lacuna Expanse is a region of space with millions of habitable worlds. You can play with or compete against thousands of players as you build your empire, fight off spies in a battle for cold war supremacy, form alliances, search the expanse for lost ancient artifacts, and more.</p>
+ <div id="joinus">Join thousands of other players online right now in this <h1>massively multiplayer online space strategy game</h1>. Play for free on the web or on your iPhone.</div>
+  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.lacunaexpanse.com%2F&amp;layout=standard&amp;show_faces=true&amp;width=350&amp;action=like&amp;colorscheme=dark&amp;height=60" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:60px;" allowTransparency="true"></iframe>
  <p> As you build out your civilization, you can watch it transform from a mere colony into a vibrant empire.  </p>
  <div style="text-align: center;"><img src="v3/buildup.gif"></div>
 </div>
@@ -237,6 +271,25 @@ img {
  <a href="https://us1.lacunaexpanse.com/"><img src="v3/firefox.png" alt="Firefox"></a>
  <a href="https://us1.lacunaexpanse.com/"><img src="v3/ie.png" alt="Internet Explorer"></a>
 </div>
+
+<div id="trailer1place">
+<a href="#trailer1vid" id="trailer1"><img alt="Trailer" src="//s3.amazonaws.com/www.lacunaexpanse.com/wallpaper/explosion-thumb.jpg"></a>
+ <div style="display: none;">
+    <div id="trailer1vid" style="width:860px;height:520px;overflow:auto;">
+     <iframe title="YouTube video player" width="853" height="510" src="http://www.youtube.com/embed/efsJRdJ6dog?rel=0;autoplay=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+ </div>
+</div>
+
+<div id="trailer2place">
+<a href="#trailer2vid" id="trailer2"><img alt="Gameplay Trailer" src="//s3.amazonaws.com/www.lacunaexpanse.com/wallpaper/empire-thumb.jpg"></a>
+ <div style="display: none;">
+    <div id="trailer2vid" style="width:860px;height:520px;overflow:auto;">
+<iframe title="YouTube video player" width="853" height="510" src="http://www.youtube.com/embed/L4h8x7O13ro?rel=0;autoplay=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+ </div>
+</div>
+
 
 <div id="screenshots">
 <a rel="screenshots" href="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/planetside.jpg" title="Looking at the surface of your planet."><img alt="Planet Surface" src="//s3.amazonaws.com/www.lacunaexpanse.com/screenshots/planetside-thumb.jpg"></a>
@@ -270,7 +323,7 @@ img {
 </ul>
 <ul style="width: 290px; float: right;">
 <li>Over 1 million worlds to explore.</li>
-<li>Over 60 different resources.</li>
+<li>Over 60 types of resources.</li>
 <li>Over 100 different buildings to customize your planets.</li>
 <li>Dozens of ship types.</li>
 <li>Contests for unique items.</li>
@@ -307,7 +360,7 @@ img {
   $(document).ready(function() {
     $("a[rel=playlink]").fancybox({
       'width'                 : '80%',
-      'height'                : '70%',
+      'height'                : '60%',
       'autoscale'             : false,
       'transitionIn'          : 'elastic',
       'transitionOut'         : 'fade',
@@ -343,8 +396,10 @@ img {
 		
 		  var options = {
 			horizontal : true,
+  		        linkTarget : google.feeds.LINK_TARGET_BLANK,
                         title : "&nbsp;",
-			numResults : 50
+			numResults : 50,
+  			stacked : false
 		  };
 		
 		  new GFdynamicFeedControl(feeds, 'news', options);
