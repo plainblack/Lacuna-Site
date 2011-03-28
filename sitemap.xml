@@ -28,13 +28,16 @@
 <url>
   <loc>http://community.lacunaexpanse.com/forums</loc>
   <lastmod>2011-03-28T21:48:21+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://community.lacunaexpanse.com/wiki</loc>
   <lastmod>2011-03-28T21:48:21+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>http://community.lacunaexpanse.com/forums/news</loc>
   <lastmod>2011-03-28T21:48:21+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 </urlset>
